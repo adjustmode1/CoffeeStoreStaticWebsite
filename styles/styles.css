@@ -1,0 +1,164 @@
+/* detail component */
+.hover-point:hover {
+    cursor: pointer;
+}
+.hover-color:hover{
+    color:green !important;
+}
+/* main */
+.header .header-top .nav-link{
+    color: black !important;
+}
+
+.border-0 {
+    border-width: 0px !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+    min-width: max-content;
+    display: block;
+}
+  
+.dropdown>.dropdown-toggle:active {
+/*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.dropdown-item-hover:hover {
+background-color: green;
+color:white !important;
+}
+
+.btn-hover:hover {
+background-color: green !important;
+color:white !important;
+}
+
+input.disable-input-focus:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* hotline */
+.call-now-button {
+    z-index: 9999;
+    clear: both;
+    margin: 0 auto;
+    position: fixed;
+    left: 5%;
+    top: 80%;
+    background-color: black;
+    border-radius: 50px;
+}
+.call-now-button .call-text{
+    margin: 8px 5px 8px 50px;
+    display: table;
+    padding: 10px;
+}
+.call-now-button .call-text p{
+    color: white !important;
+}
+
+.alo-circle {
+    width: 130px;
+    height: 130px;
+    top: -40px;
+    left: -40px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid rgba(30,30,30,.4);
+    opacity: 1;
+    animation: alo-circle-ani 1.2s infinite ease-in-out;
+    transition: all .5s;
+    transform-origin: 50% 50%;
+}
+
+.alo-circle-fill {
+    width: 80px;
+    height: 80px;
+    top: -15px;
+    left: -15px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    opacity: 1;
+    animation: alo-circle-fill-ani 2.3s infinite ease-in-out;
+    transition: all .5s;
+    transform-origin: 50% 50%;
+}
+.alo-circle-image {
+    background-color: green !important;
+}
+.alo-circle-image.shake {
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0; 
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    opacity: 1;
+    animation: shake 1s infinite ease-in-out;
+    transform-origin: 50% 50%;
+}
+@keyframes alo-circle-ani {
+    0% {
+        -webkit-transform: rotate(0) scale(.5) skew(1deg);
+        -webkit-opacity: .1;
+    }
+    30% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        -webkit-opacity: .5;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        -webkit-opacity: .1;
+    }
+}
+
+@keyframes alo-circle-fill-ani {
+    0% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2;
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2;
+    }
+}
+
+@keyframes shake {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }  
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+}
+
+.shake {
+    animation-name: shake;
+}
+
+/* end hotline */
